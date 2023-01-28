@@ -9,7 +9,9 @@
 
 .titulo {
   display: inline-block;
-  margin-left: 38%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 18px;
   padding-bottom: 5px;
   text-align: center;
@@ -95,7 +97,8 @@ main {
   cursor: pointer;
   height: 67px;
   margin-top: 550px;
-  margin-left: 200px;
+  margin-left: auto;
+  margin-right: auto;
   width: 336px;
 }
 
@@ -115,10 +118,7 @@ footer {
   font-weight: bold;
 }
 
-/*.img-footer{
-  border: none;
-  background-image: url(./resources/imagenes/Imagenes-sin-background/footer-removebg-preview.png);
-}*/
+
 .redes {
   display: flex;
   align-items: center;
@@ -159,26 +159,36 @@ footer {
 @media screen and (max-width:480px) {
 
   /*hacer responsiva nuestra pag para celus*/
-  h1 {
+  .titulo {
+    width: 100%;
+    margin-left: 50%;
+    margin-right: 50%;
     text-align: center;
 
   }
 
   .footer,
-  .logo,
   .text-area,
   .botones,
   .btn-desencriptar .mensaje,
   .copiar,
   .img-footer {
     width: auto;
+    margin-left: 5px;
+  }
 
-  }
-  main{
+  main {
     display: inline-block;
-  }
-  .lista-diferenciales,
-  .imagen-diferenciales {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  .footer {
+    width: 100%;
+    margin-left: 50%;
+    margin-right: 50%;
+    height: auto;
+  }
+
 }
