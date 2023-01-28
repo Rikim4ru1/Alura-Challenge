@@ -43,5 +43,5 @@ function copiar(){
     var contenido = document.querySelector(".mensaje");
     contenido.select();
     document.execCommand("copy");//daba error
-    alert("Se copió!");
+    alert("Se copió el texto.");
 }
